@@ -1,0 +1,19 @@
+menu "Readzio configuration"
+
+config READZIO_ENABLE_NETWORK
+    bool "Enable Wi-Fi and backend health check"
+    default n
+
+config READZIO_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+
+config READZIO_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+
+config READZIO_BACKEND_HEALTH_URL
+    string "Backend health-check URL"
+    default "http://localhost:8000/health"
+
+endmenu
